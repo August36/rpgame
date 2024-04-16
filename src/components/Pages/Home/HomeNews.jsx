@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import CoffeImg from "../../../assets/coffee-placeholder.jpg"
+import "./HomeNews.css"
 
 function HomeNews(props) {
   return (
     <article>
         <figure className="article_img_container">
-          <img src="imgs/heroImg.jpg" alt="" />
+          <img src={CoffeImg} alt="" />
         </figure>
         <div className="article_text">
           <h2>{props.title}</h2>
