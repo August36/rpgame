@@ -1,5 +1,5 @@
-import React from 'react'
-import{ Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function HomeNews(props) {
   return (
@@ -11,9 +11,16 @@ function HomeNews(props) {
           <h2>{props.title}</h2>
           <p>{props.text}</p>
           <Link to="/">{props.linkName}</Link>
-          </div>
-          </article>
-  )
+        </div>
+    </article>
+  );
 }
 
-export default HomeNews
+// Prop validation
+HomeNews.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  linkName: PropTypes.string.isRequired
+};
+
+export default HomeNews;

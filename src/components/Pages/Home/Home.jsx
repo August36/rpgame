@@ -1,4 +1,3 @@
-import React from "react";
 import Heroimg from "./Heroimg";
 import HomeNews from "./HomeNews";
 

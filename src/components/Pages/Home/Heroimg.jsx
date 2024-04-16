@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import "./Heroimg.css";
 
 const Heroimg = ({ src, altText }) => {
@@ -9,6 +9,12 @@ const Heroimg = ({ src, altText }) => {
             </figure>
         </section>
     );
+};
+
+// Define prop types
+Heroimg.propTypes = {
+    src: PropTypes.string.isRequired,
+    altText: PropTypes.string.isRequired
 };
 
 export default Heroimg;
