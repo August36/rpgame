@@ -1,6 +1,12 @@
+import React from "react";
+import Heroimg from "../Heroimg";
 
 export const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <Heroimg src="/heroImg.jpg" altText="Art piece"/>
+    </>
+  );
+};
+
+export default Home;

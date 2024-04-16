@@ -1,0 +1,9 @@
+img{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.heroImg{
+    height: 90dvh;
+}
